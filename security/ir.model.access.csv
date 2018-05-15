@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ftz_addons/_ftz_addons/,ftz_addons/.ftz_addons/,model_ftz_addons/_ftz_addons/,,1,0,0,0

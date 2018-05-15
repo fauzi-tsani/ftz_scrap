@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="ftz_addons/.list">
+      <field name="name">ftz_addons/ list</field>
+      <field name="model">ftz_addons/.ftz_addons/</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="ftz_addons/.action_window">
+      <field name="name">ftz_addons/ window</field>
+      <field name="res_model">ftz_addons/.ftz_addons/</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="ftz_addons/.action_server">
+      <field name="name">ftz_addons/ server</field>
+      <field name="model_id" ref="model_ftz_addons/_ftz_addons/"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="ftz_addons/" id="ftz_addons/.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="ftz_addons/.menu_1" parent="ftz_addons/.menu_root"/>
+    <menuitem name="Menu 2" id="ftz_addons/.menu_2" parent="ftz_addons/.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="ftz_addons/.menu_1_list" parent="ftz_addons/.menu_1"
+              action="ftz_addons/.action_window"/>
+    <menuitem name="Server to list" id="ftz_addons/" parent="ftz_addons/.menu_2"
+              action="ftz_addons/.action_server"/>
+    -->
+  </data>
+</odoo>
